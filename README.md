@@ -1,5 +1,9 @@
 # Sequence-Alignment
+
+This Repository contains python implementation to perform sequence alignment and calculate match score of two sequences.
+
 Filenames:
+
 - GlobalAlignment.py: without affine gap penalty.
 - LocalAlignment.py: with affine gap penalty.
 - seq1.fa: Sample 1 FASTA file. 
