@@ -13,5 +13,5 @@ Note: Format of FASTA File is >Sequence (Ex. >ABCTABC).
 - Open Terminal.
 - Go to the the directory of this folder.
 - Use following syntax to run the python scripts: 
-    - python LocalAlignment.py seq1.fa seq2.fa" 
+    - python LocalAlignment.py seq1.fa seq2.fa
     - python GlobalAlignment.py seq1.fa seq2.fa
