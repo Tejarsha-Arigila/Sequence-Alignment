@@ -5,7 +5,7 @@ Filenames:
 - seq1.fa: Sample 1 FASTA file. 
 - seq2.fa: Sample 2 FASTA file. 
 
-Note: Format of FASTA File is >Sequence (Ex. >ABCTABC).
+Note: Format of FASTA File is >Sequence (Ex. >AGCTAGC).
 
 # How to run:
 - Go to the the directory of this folder.
