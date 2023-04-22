@@ -1,7 +1,7 @@
 # Sequence-Alignment
 *Filenames: *
-- LocalAlignment.py: without affine gap penalty.
-- GlobalAlignment.py: with affine gap penalty.
+- GlobalAlignment.py: without affine gap penalty.
+- LocalAlignment.py: with affine gap penalty.
 - seq1.fa: Sample 1 FASTA file. 
 - seq2.fa: Sample 2 FASTA file. 
 
