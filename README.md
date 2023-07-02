@@ -24,6 +24,6 @@ To run the scripts, follow these steps:
     - For Global Alignment: `python GlobalAlignment.py seq1.fa seq2.fa`
     - For Local Alignment: `python LocalAlignment.py seq1.fa seq2.fa`
 
-Please ensure that you have Python installed in your environment before executing these scripts. You can find the latest Python version [here](https://www.python.org/downloads/).
+Please ensure that you have Python installed in your environment before executing these scripts.
 
 Enjoy exploring the wonders of sequence alignment!
