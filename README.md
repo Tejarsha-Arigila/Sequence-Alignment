@@ -1,5 +1,7 @@
 # Sequence-Alignment
 
+![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
+
 This Repository contains python implementation to perform sequence alignment and calculate match score of two sequences.
 
 Filenames:
