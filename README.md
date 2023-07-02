@@ -2,7 +2,7 @@
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 
-Welcome to the Sequence-Alignment repository. Here you will find a Python implementation for performing sequence alignment. Sequence alignment is a method of arranging sequences of DNA, RNA, or protein to identify regions of similarity. These similarities could be the result of functional, structural, or evolutionary relationships between the sequences.
+Welcome to the Sequence-Alignment-Toolkit repository. Here you will find a Python implementation for performing sequence alignment. Sequence alignment is a method of arranging sequences of DNA, RNA, or protein to identify regions of similarity. These similarities could be the result of functional, structural, or evolutionary relationships between the sequences.
 
 This repository provides scripts for two types of sequence alignments: Global Alignment and Local Alignment. Each script calculates the match score between two sequences, aiding in the understanding of their comparative structures.
 
