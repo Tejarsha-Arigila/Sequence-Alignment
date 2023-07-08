@@ -1,3 +1,4 @@
+import os
 import sys
 
 # Function to initialize matrices
@@ -71,6 +72,9 @@ def trace_matrix(matrix, direction, seq_1, seq_2):
 
 # Function to run the global sequence alignment
 def sequence_alignment(sequence_file_1, sequence_file_2):
+    if not os.path.isfile(sequence_file_1) or not os.path.isfile(sequence_file_2):
+        print("Both files should be in the current directory")
+        return
     seq_1 = list(open(sequence_file_1, "r").readline())[1:]
     seq_2 = list(open(sequence_file_2, "r").readline())[1:]
     alignment_matrix, direction_matrix = initialize_matrix(seq_1, seq_2)
@@ -80,6 +84,6 @@ def sequence_alignment(sequence_file_1, sequence_file_2):
     print(' '.join(aligned_seq_1)+'\n'+' '.join(alignment_mid)+'\n'+' '.join(aligned_seq_2))
     
 if __name__ == '__main__':
-    filename1 = sys.argv[1]
-    filename2 = sys.argv[2]
+    filename1 = os.path.basename(sys.argv[1])
+    filename2 = os.path.basename(sys.argv[2])
     sequence_alignment(filename1, filename2)
