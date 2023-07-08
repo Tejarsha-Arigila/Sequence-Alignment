@@ -1,4 +1,5 @@
 import sys
+import os
 
 # Function to initialize matrices
 def initialize_matrices(len_seq1, len_seq2, gap_open = -5):
@@ -114,6 +115,9 @@ def traceback(seq1, seq2, match_scores, x_scores, y_scores, direction_matrix):
     
 # Function to run the local sequence alignment
 def sequence_alignment(seq1, seq2, gap_open = -5, ga_ext = -1):
+    if not os.path.isfile(sequence_file_1) or not os.path.isfile(sequence_file_2):
+        print("Both files should be in the current directory")
+        return
     seq1 = list(open(seq1, "r").readline())[1:]
     seq2 = list(open(seq2, "r").readline())[1:]
     len_seq1 = len(seq1)
@@ -125,6 +129,6 @@ def sequence_alignment(seq1, seq2, gap_open = -5, ga_ext = -1):
     print(seq1_aligned+'\n'+seq_mid+'\n'+seq2_aligned)
 
 if __name__ == '__main__':
-    filename1 = sys.argv[1]
-    filename2 = sys.argv[2]
+    filename1 = os.path.basename(sys.argv[1])
+    filename2 = os.path.basename(sys.argv[2])
     sequence_alignment(filename1, filename2)
